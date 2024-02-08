@@ -10,6 +10,6 @@ jobs:
           -uses: actions/checkout@v3
           -name: Build and push the image
            run:  |
-              docker login --username snehamanohar23 --password ${{secrets.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}} ghcr.io
-              docker build -t ghcr.io/snehamanohar23/Practicum_3:latest --file Dockerfile .
-              docker push ghcr.io/snehamanohar23/Practicum_3:latest
+              docker login --username SnehaManohar23 --password ${{secrets.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}} ghcr.io
+              docker build -t ghcr.io/SnehaManohar23/Practicum_3:latest --file Dockerfile .
+              docker push ghcr.io/SnehaManohar23/Practicum_3:latest
