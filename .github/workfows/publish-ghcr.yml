@@ -13,3 +13,5 @@ jobs:
               docker login --username SnehaManohar23 --password ${{secrets.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}} ghcr.io
               docker build -t ghcr.io/SnehaManohar23/Practicum_3:latest --file Dockerfile .
               docker push ghcr.io/SnehaManohar23/Practicum_3:latest
+
+              
