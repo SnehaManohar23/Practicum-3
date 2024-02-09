@@ -1,8 +1,11 @@
 FROM node:20.11.0-alpine
 
-WORKDIR /usr/src/app
-COPY package*.json ./
+WORKDIR /arthmetic-service
+COPY package*.json/ /arthmetic-service
 RUN npm ci --omit=dev
-COPY ./src ./src
+COPY ./ /arithmetic-service/src
 
-CMD npm run start
+CMD ["npm" "start"]
+
+EXPOSE 80
+
